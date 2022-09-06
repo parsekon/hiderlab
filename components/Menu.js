@@ -63,7 +63,7 @@ export default function Menu() {
   );
 
   return (
-    <Navbar className="mx-auto max-w-screen-xl lg:py-1">
+    <Navbar className="mx-auto max-w-screen-xl lg:py-1 md:px-8">
       <div className="container mx-auto flex items-center text-blue-gray-900">
         <Typography
           as="a"
