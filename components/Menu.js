@@ -18,7 +18,7 @@ export default function Menu() {
   }, []);
 
   const navList = (
-    <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul className="mb-4 mt-2 ml-8 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 align-middle">
       <Typography
         as="li"
         variant="small"
@@ -26,7 +26,7 @@ export default function Menu() {
         className="p-1 font-normal"
       >
         <a href="#" className="flex items-center">
-          Pages
+          портфолио
         </a>
       </Typography>
       <Typography
@@ -36,7 +36,7 @@ export default function Menu() {
         className="p-1 font-normal"
       >
         <a href="#" className="flex items-center">
-          Account
+          команда
         </a>
       </Typography>
       <Typography
@@ -46,7 +46,7 @@ export default function Menu() {
         className="p-1 font-normal"
       >
         <a href="#" className="flex items-center">
-          Blocks
+          услуги
         </a>
       </Typography>
       <Typography
@@ -56,7 +56,7 @@ export default function Menu() {
         className="p-1 font-normal"
       >
         <a href="#" className="flex items-center">
-          Docs
+          контакты
         </a>
       </Typography>
     </ul>
@@ -64,21 +64,21 @@ export default function Menu() {
 
   return (
     <Navbar className="mx-auto max-w-screen-xl lg:py-1">
-      <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
+      <div className="container mx-auto flex items-center text-blue-gray-900">
         <Typography
           as="a"
           href="#"
           variant="small"
           className="mr-4 cursor-pointer py-1.5 font-normal"
         >
-          <h1 className="text-[56px] text-gray-800">
+          <h1 className="text-[64px] text-gray-800">
             hider<span className="text-lightGreen">lab</span>
           </h1>
         </Typography>
         <div className="hidden lg:block">{navList}</div>
         <IconButton
           variant="text"
-          className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+          className="ml-auto  text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
           ripple={false}
           onClick={() => setOpenNav(!openNav)}
         >
