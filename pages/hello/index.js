@@ -7,10 +7,9 @@ const Hello = () => {
       <div className="flex md:flex-row flex-col pt-8 md:px-16 md:pt-16">
         <div className="basis-1/2 ">
           <h1 className="text-[48px] leading-[64px] mb-8">
-            разрабатываем и<br /> продвигаем<br /> blockchain проекты
+            Разрабатываем и<br /> продвигаем<br /> blockchain проекты
           </h1>
-          <h2>Cмарт-контракты, web3 DApp приложения, токены, NFT.</h2>
-          <h2 className="font-bold mb-24">Hачнем с идеи, доведем до результата.</h2>
+          <h2>Cмарт-контракты, web3 приложения, токены, NFT, маркетинговые стратегии</h2>
           <button className="w-80 h-14 rounded-lg bg-lightGreen drop-shadow-2xl hover:scale-95">получить предложение</button>
         </div>
         <div className="basis-1/2 flex justify-end drop-shadow-xl">

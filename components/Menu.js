@@ -74,7 +74,7 @@ export default function Menu() {
           className="mr-4 cursor-pointer py-1.5 font-normal"
         >
           <h1 className="text-[64px] text-gray-800">
-            hider<span className="text-lightGreen">lab</span>
+            hider<span className="text-lightGreen">lab.</span>
           </h1>
           <h1>worldwide</h1>
         </Typography>
