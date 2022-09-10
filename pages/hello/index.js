@@ -10,7 +10,7 @@ const Hello = () => {
             Разрабатываем и<br /> продвигаем<br /> blockchain проекты
           </h1>
           <h2>Cмарт-контракты, web3 приложения, токены, NFT, маркетинговые стратегии</h2>
-          <button className="w-80 h-14 rounded-lg bg-lightGreen drop-shadow-2xl hover:scale-95">получить предложение</button>
+          <button className="w-80 h-14 rounded-lg bg-lightGreen drop-shadow-2xl hover:scale-95 my-8">получить предложение</button>
         </div>
         <div className="basis-1/2 flex justify-end drop-shadow-xl">
           <Image
