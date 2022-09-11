@@ -56,7 +56,7 @@ export default function Menu() {
           variant="small"
           className="mr-4 cursor-pointer py-1.5 font-normal"
         >
-          <h1 className="text-[64px] text-gray-800">
+          <h1 className="text-[32px] md:text-[64px] text-gray-800">
             hider<span className="text-lightGreen">lab.</span>
           </h1>
         </Typography>

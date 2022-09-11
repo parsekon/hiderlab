@@ -2,7 +2,7 @@ import Menu from "./Menu";
 
 const Header = () => {
   return (
-    <div>
+    <div className="">
         <Menu />
     </div>
   );
