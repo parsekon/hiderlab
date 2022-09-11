@@ -20,7 +20,7 @@ export default function Menu() {
   }, []);
 
   const navList = (
-    <ul className="mb-4 mt-2 ml-8 text-gray-800 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 align-middle">
+    <ul className="mb-4 mt-2 ml-8 text-gray-300 md:text-gray-800 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 align-middle">
       <Typography as="li" variant="small" className="p-1 font-normal">
         <a
           onClick={() => router.push("/about")}
@@ -60,7 +60,7 @@ export default function Menu() {
             hider<span className="text-lightGreen">lab.</span>
           </h1>
         </Typography>
-        <div className="hidden lg:block">{navList}</div>
+        <div className="hidden lg:block ">{navList}</div>
         <div
           className="ml-auto text-gray-500 z-40 cursor-pointer hover:text-gray-400 hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
           ripple={false}
