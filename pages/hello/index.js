@@ -16,8 +16,8 @@ const Hello = () => {
           <Image
             src="/abstract.png"
             alt="abstraction"
-            width={557}
-            height={557}
+            width={480}
+            height={480}
           />
         </div>
       </div>
