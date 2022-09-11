@@ -20,15 +20,15 @@ export default function Menu() {
   }, []);
 
   const navList = (
-    <ul className="mb-4 mt-2 ml-8 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 align-middle">
+    <ul className="mb-4 mt-2 ml-8 text-gray-800 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 align-middle">
       <Typography
         as="li"
         variant="small"
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a onClick={() => router.push('/about')} className="flex items-center cursor-pointer ">
-          портфолио
+        <a onClick={() => router.push('/about')} className="flex items-center cursor-pointer hover:text-gray-500">
+          О нас
         </a>
       </Typography>
       <Typography
@@ -37,8 +37,8 @@ export default function Menu() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
-          команда
+        <a href="#" className="flex items-center hover:text-gray-500">
+          Команда
         </a>
       </Typography>
       <Typography
@@ -47,8 +47,8 @@ export default function Menu() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
-          услуги
+        <a href="#" className="flex items-center hover:text-gray-500">
+          Услуги
         </a>
       </Typography>
       <Typography
@@ -57,8 +57,8 @@ export default function Menu() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
-          контакты
+        <a href="#" className="flex items-center hover:text-gray-500">
+          Контакты
         </a>
       </Typography>
     </ul>
