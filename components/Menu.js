@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import {
   Navbar,
-  MobileNav,
   Typography,
   Button,
   IconButton,
 } from "@material-tailwind/react";
 import { useRouter } from "next/router";
+import MenuMobile from "./MenuMobile";
 
 export default function Menu() {
   const [openNav, setOpenNav] = useState(false);
@@ -21,42 +21,25 @@ export default function Menu() {
 
   const navList = (
     <ul className="mb-4 mt-2 ml-8 text-gray-800 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 align-middle">
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
-        <a onClick={() => router.push('/about')} className="flex items-center cursor-pointer hover:text-gray-500">
+      <Typography as="li" variant="small" className="p-1 font-normal">
+        <a
+          onClick={() => router.push("/about")}
+          className="flex items-center cursor-pointer hover:text-gray-500"
+        >
           О нас
         </a>
       </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
+      <Typography as="li" variant="small" className="p-1 font-normal">
         <a href="#" className="flex items-center hover:text-gray-500">
           Команда
         </a>
       </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
+      <Typography as="li" variant="small" className="p-1 font-normal">
         <a href="#" className="flex items-center hover:text-gray-500">
           Услуги
         </a>
       </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
+      <Typography as="li" variant="small" className="p-1 font-normal">
         <a href="#" className="flex items-center hover:text-gray-500">
           Контакты
         </a>
@@ -80,7 +63,7 @@ export default function Menu() {
         <div className="hidden lg:block">{navList}</div>
         <IconButton
           variant="text"
-          className="ml-auto  text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+          className="ml-auto text-gray-800 hover:text-gray-400 hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
           ripple={false}
           onClick={() => setOpenNav(!openNav)}
         >
@@ -116,9 +99,8 @@ export default function Menu() {
           )}
         </IconButton>
       </div>
-      <MobileNav open={openNav}>
-        {navList}
-      </MobileNav>
+
+      {openNav ? <MenuMobile list={navList} /> : null}
     </Navbar>
   );
 }
