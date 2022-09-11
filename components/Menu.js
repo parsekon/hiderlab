@@ -66,7 +66,7 @@ export default function Menu() {
 
   return (
     <Navbar className="max-w-screen-xl lg:py-1 md:px-16">
-      <div className="container mx-auto flex items-center text-blue-gray-900">
+      <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
           href="/hello"
@@ -76,7 +76,6 @@ export default function Menu() {
           <h1 className="text-[64px] text-gray-800">
             hider<span className="text-lightGreen">lab.</span>
           </h1>
-          <h1>worldwide</h1>
         </Typography>
         <div className="hidden lg:block">{navList}</div>
         <IconButton
