@@ -61,9 +61,8 @@ export default function Menu() {
           </h1>
         </Typography>
         <div className="hidden lg:block">{navList}</div>
-        <IconButton
-          variant="text"
-          className="ml-auto text-gray-800 hover:text-gray-400 hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+        <div
+          className="ml-auto text-gray-500 z-40 cursor-pointer hover:text-gray-400 hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
           ripple={false}
           onClick={() => setOpenNav(!openNav)}
         >
@@ -97,7 +96,7 @@ export default function Menu() {
               />
             </svg>
           )}
-        </IconButton>
+        </div>
       </div>
 
       {openNav ? <MenuMobile list={navList} /> : null}
