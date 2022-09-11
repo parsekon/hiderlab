@@ -24,7 +24,7 @@ const Hello = () => {
             Обсудить проект
           </button>
         </div>
-        <div className="basis-1/2 flex justify-end drop-shadow-xl absolute md:relative h-[280px] md:h-[480px] w-[280px] bottom-1 left-24 md:top-2 md:left-0">
+        <div className="basis-1/2 flex justify-end drop-shadow-xl absolute md:relative h-[280px] md:h-[480px] w-[280px] bottom-0 left-4 md:top-2 md:left-0">
           <Image
             src="/abstract.png"
             alt="abstraction"
