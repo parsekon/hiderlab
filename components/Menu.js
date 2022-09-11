@@ -23,7 +23,7 @@ export default function Menu() {
     <ul className="mb-4 mt-2 ml-8 text-gray-300 md:text-gray-800 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 align-middle">
       <Typography as="li" variant="small" className="p-1 font-normal">
         <a
-          onClick={() => router.push("/about")}
+          // onClick={() => router.push("/about")}
           className="flex items-center cursor-pointer hover:text-gray-500"
         >
           О нас
@@ -48,7 +48,7 @@ export default function Menu() {
   );
 
   return (
-    <Navbar className="max-w-screen-xl lg:py-1 md:px-16">
+    <Navbar className="max-w-screen-xl lg:py-1 md:px-16 bg-gray-50">
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
