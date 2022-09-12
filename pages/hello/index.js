@@ -6,7 +6,7 @@ const Hello = () => {
     <Layout>
       <div className="flex md:flex-row flex-col pt-8 md:px-16 md:pt-16 -z-10">
         <div className="basis-1/2">
-          <h1 className="text-[28px] leading-[48px] md:text-[48px] md:leading-[64px] mb-8">
+          <h1 className="text-[28px] font-bold leading-[40px] md:text-[48px] md:leading-[64px] mb-8">
             Разрабатываем и<br /> продвигаем
             <br /> blockchain проекты
           </h1>
